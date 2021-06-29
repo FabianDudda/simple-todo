@@ -1,0 +1,173 @@
+/* ============ GLOBAL ============ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #43c6ac;
+  background: linear-gradient(120deg, #43c6ac 0%, #40a5bb 50%, #191654 100%);
+  color: white;
+  font-family: "Poppins", Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* ================================ */
+/* ============ HEADER ============ */
+header {
+  font-size: 1.5rem;
+}
+
+header, form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ================================ */
+/* ============ FORMS ============ */
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #ff6f47;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  background: #ff6f47;
+  color: white;
+}
+
+/* =============================== */
+/* ============ TODO ITEMS ============ */
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.trash-btn,
+.complete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: green;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.select-container {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select-container::after {
+  content: "\25BC";
+  position: absolute;
+  background: white;
+  color: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-container:hover::after {
+  background: #ff6f47;
+  color: white;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  padding: 1.219rem;
+  cursor: pointer;
+}
+
+/* ==================================== */
+/*# sourceMappingURL=style.css.map */
